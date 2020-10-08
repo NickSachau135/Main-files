@@ -1,4 +1,16 @@
+
+var li = document.getElementById('number').innerHTML;
+li.innerHTML = `<li>
+<label for="num">
+    Enter A Number:
+    <input id="num" name="number" type="text">
+</label>
+</li>
+<li>
+    <button onclick="newNumber()">Another Number?</button>
+</li>`
+
 function newNumber() {
-    var li = document.getElementById('number');
-    li = document.createElement('li');
+    
+    li.innerHTML += `<li> <label for="num"> Enter A Number: <input id="num" name="number" type="text"> </label> </li>`
 }
