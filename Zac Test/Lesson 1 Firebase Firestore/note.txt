@@ -1,0 +1,7 @@
+.where('name', '==', 'Nick');
+.where('name', '>', 'n');  will have all the ones that have the name before the latter n in the alphabet
+.where('name', '<', 'n');  will have all the ones that have the name after the latter n in the alphabet
+
+
+
+have a drop down where u can sort

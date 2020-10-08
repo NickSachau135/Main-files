@@ -1,0 +1,118 @@
+.container {
+    width: auto;
+    display: grid;
+    grid-template-columns: 200px 310px 250px 250px 250px 254px; /* 5 colums */
+    grid-template-rows: 50px 60px 80px 178px 385px 300px 350px; /* 8 rows */
+    border: solid gray 15px;
+
+
+    grid-template-areas: 
+        "nav nav nav nav nav"
+        "logo logo logo logo fb"
+        "logo logo logo logo tw"
+        "logo logo logo logo img3"
+        "img4 img4 img5 img6 img7"
+        "img8 img9 img9 img10 img11"
+        "img8 img13 img14 img14 img15"
+        "img12 img13 . . ."
+        ". . . . .";
+}
+
+.img1 {
+    grid-area: fb;
+}
+
+.img2 {
+    grid-area: tw;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.img14 {
+    grid-area: img14;
+}
+
+.img15 {
+    grid-area: img15;
+}
+
+.img16 {
+    grid-area: img16;
+}
+
+.img17 {
+    grid-area: img17;
+}
+
+.img18 {
+    grid-area: img18;
+}
+
+.img19 {
+    grid-area: img19;
+}
+
+.img20 {
+    grid-area: img20;
+}
+
+.logo {
+    grid-area: logo;
+}
+li {
+    display: inline;
+}
+
+.topnav {
+    width: 1818px;
+    background-color: rgb(146, 140, 140);
+    overflow: hidden;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    padding: 20px 10px;
+}

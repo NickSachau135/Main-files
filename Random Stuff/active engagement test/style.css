@@ -1,0 +1,68 @@
+html {
+    background-color: white;
+}
+
+body {
+    transform:translate( 20px, -30px);      /*moves the text to align how you want*/
+    width: 1825px;
+    height: 800px;
+}
+
+.page1 {
+    margin: auto;
+    margin-top: .5in;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(114, 114, 114, 0.267);       /*sets a line around the set borders with a color value*/
+    width: 8in;
+    height: 950px;
+}
+
+.page2 {
+    margin: auto;
+    margin-top: .1in;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgba(114, 114, 114, 0.267);
+    width: 8in;
+    height: 950px;
+}
+
+.img-container {  /*div elemet for picture*/
+    margin: auto;
+    text-align: center;
+    margin-top: .35in;
+    height: 120px;
+    width: 120px;
+}
+
+.box {
+    text-align: center;
+    height: 300px;
+    margin: auto;
+    transform: translateY(-30px);
+}
+
+h1 {
+    height: 35px;
+    width: 7in;
+    text-transform: capitalize;
+    background-color:orange;
+    border:1px solid black;
+    font-size: 1.28em;
+    margin: auto;
+    transform:translate(10px, 20px)
+}
+
+.objbox {
+    width: 672px;
+    height: 35px;
+    font-weight: bold;
+    border: 1px solid black;
+    align-items: center;
+    transform:translate(57px ,19px)
+}
+
+p {
+    transform:translateY(-12px)
+}

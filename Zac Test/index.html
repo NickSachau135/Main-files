@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zac Testing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="Signup_Form_box">
+        <h1 class="howToNav">Test Enviroment</h1>
+        <!-- Signup Form -->
+        <form id="signupForm">
+            <input class="srtname" name="name" type="text" placeholder="First and last name" autocomplete="off" required>
+            <br>
+            <input class="srtsize" name="size" type="text" placeholder="t-shirt size" autocomplete="off" required>
+            <br>
+            <input class="srtnmbr" name="number" type="number" min="1" max="99" placeholder="Number for t-shirt" autocomplete="off" required>
+            <h3 class="subHeader">
+                What date(s) can you make? (You can vote all 3 or none if you want)
+            </h3>
+            <input name="date1" value="November 7th" type="checkbox">
+            <label for="date1">November 7th</label>
+            <br>
+            <input name="date2" value="November 14th" type="checkbox">
+            <label for="date2">November 14th</label>
+            <br>
+            <input name="date3" value="October 24th" type="checkbox">
+            <label for="date3">October 24th</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+
+        <ul id="signup-list"></ul>
+
+        <!-- make another page that has all the people who signed up -->
+
+    </div>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyDj67Ow2imjYD9uiKjVbBzY7MJfVac2w6o",
+        authDomain: "corhole-d470a.firebaseapp.com",
+        databaseURL: "https://corhole-d470a.firebaseio.com",
+        projectId: "corhole-d470a",
+        storageBucket: "corhole-d470a.appspot.com",
+        messagingSenderId: "411457777393",
+        appId: "1:411457777393:web:751ec4d1ee093d43934350",
+        measurementId: "G-WPV6831SML"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="script.js"></script>
+
+    <form onsubmit="submitForm(event)">
+        <input name="searchTerm"/>
+        <button>Submit</button>
+      </form>
+            
+</body>
+</html>

@@ -1,0 +1,24 @@
+html {
+    background-color: rgb(22, 22, 22);
+}
+
+body {
+    color: white;
+}
+
+.srtname {
+    text-align: center;
+}
+
+.srtsize {
+    text-align: center;
+}
+
+.srtnmbr {
+    width: 140px;
+    text-align: center;
+}
+
+.Signup_Form_box {
+    text-align: center;
+}

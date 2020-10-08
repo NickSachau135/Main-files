@@ -1,0 +1,31 @@
+p {
+    color: purple;
+}
+
+span {
+    border: 1px dashed black;
+    background-color: yellowgreen;
+}
+
+header {
+    border: solid 10px black;
+    font-size: 3em;
+}
+
+header div {
+    margin: 10px;
+    padding: 10px;
+    width: calc(60% - 20px - 20px);
+    background-color: salmon;
+    text-decoration: underline dotted black;
+}
+
+img {
+    transform: rotate(90deg);
+}
+
+@media(max-width: 300px){
+    img {
+        transform: rotate(180deg);
+    }
+}

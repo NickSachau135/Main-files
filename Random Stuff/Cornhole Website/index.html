@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nick Sachau">
+    <meta name="description" content="Cornhole Chmapions Website">
+    <meta property="og:image" content="favicon.ico">
+    <meta property="og:description" content="Cornhole Championship setup and hosted by Nick Sachau">
+    <meta property="og:title" content="Chornhole Championship">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Cornhole Website Comming Soon</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div id="mySideNav" class="sidenav">
+            <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+            <a class="active" href="index.html">Home</a>
+            <a class="nonActive" href="#"></a>
+            <a class="nonActive" href="#"></a>
+            <a class="nonActive" href="#"></a>
+            <a class="nonActive" href="#"></a>
+            <a class="nonActive" href="#"></a>
+            <a class="nonActive" href="#"></a>
+        </div>
+        <span class="btn-nav-open" style="font-size:30px;cursor:pointer; color: white;" onclick="openNav()">&#9776;</span>
+    </nav>
+    
+    <header>
+        <div class="box">
+            <h1 class="cht">Cornhole Tournament</h1>
+        </div>
+    </header>
+
+    <main>
+        <form class="form" action="POST">
+            <h1 class="headerSignup">Signup Form</h1>
+            <fieldset>
+                <legend class="cc">Cornhole Champions</legend>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <label for="name">Enter your Name:</label>
+                                <input type="text" id="name" autocomplete="off" name="name" required placeholder="First and last name">
+                            </label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="size">Enter your shirt size:</label>
+                                <input type="text" id="size" autocomplete="off" name="size" required placeholder="t-shirt size">
+                            </label>
+                        </li>
+                        <br>
+                        <li>
+                            <label for="name">Enter your shirt number:</label>
+                                <input type="number" min="1" max="99" autocomplete="off" id="name" name="name" placeholder="Number on t-shirt" required>
+                            </label>
+                        </li>
+                        <br>
+                        <li>
+                            <label style="transform: translateX(100px);" for="dates">What Date(s) Can you make?(You can vote all 3 or none if you want)</label>
+                        </li>
+                        <br>
+                        <li class="date_1">
+                            <label for="date1">November 7<sup>th</sup></label>
+                            <input type="checkbox" value="November 7th" name="date1">
+                        </li>
+                        <li class="date_2">
+                            <label for="date2">November 14<sup>th</sup></label>
+                            <input type="checkbox" value="November 14th" name="date2">
+                        </li>
+                        <li class="date_3">
+                            <label for="date3">October 24<sup>th</sup></label>
+                            <input type="checkbox" value="October 24th" name="date3">
+                        </li>
+                        <br><br>
+                        <li>
+                            <button class="submit" type="submit">Submit</button>
+                        </li>
+                    </ul>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p class="footer_p">&#169; Copyright 2020 by Nick Sachau. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

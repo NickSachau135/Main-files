@@ -1,0 +1,125 @@
+html {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    height: 100%;
+    margin: 0;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #021c72;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+} /* the navigation bar to move from one page to the other on the side*/
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a.active {
+    background-color: red;
+    color: white;
+} /*class that makes a certain word be highlighted showing there on that page*/
+
+.sidenav a.nonActive:hover {
+    color:red;
+}
+
+.sidenav a:hover {
+    color: black;
+} /*effect for when you hover over element*/
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+} /*element to seeting where the button to close the nav bar is*/
+
+.cht {
+    font-size: 2.2em;
+    text-align: center;
+    background: linear-gradient(red, white, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 370px;
+    height: 40px;
+    /* text-shadow: -1px -1px black; */
+    -webkit-text-stroke: 1px black;
+
+}
+
+.box {
+    border: 1px solid white;
+    background-image: linear-gradient(to right, rgb(44, 44, 255),rgb(190, 190, 190),rgb(255, 44, 44));
+    /*makes the background with the gradient of blue, gray/white, red from left to right*/
+    width: 366px;
+    padding: 1px 5px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    height: 150px;
+    background-color: rgb(46, 46, 46);
+}
+
+.footer_p {
+    color:white;
+    border-top: 1px soid blue;
+}
+
+.cc {
+    font-size: 20px;
+}
+
+.date_1 {
+    transform: translateX(100px);
+    list-style-type: square;
+}
+
+.date_2 {
+    transform: translateX(100px);
+    list-style-type: square;
+}
+
+.date_3 {
+    transform: translateX(100px);
+    list-style-type: square;
+}
+
+.submit {
+    transform: translateX(110px);
+}
+
+.comingSoonBox {
+    width: 600px;
+    height: 400px;
+    border: 1px solid white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.comingSoon {
+    width:1000px;
+    transform: translateX(-100px);
+}
+
+@media(max-width: 500px) {
+    .date_1 {
+        transform: rotate(180deg);
+    }   
+}
