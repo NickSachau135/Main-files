@@ -1,0 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
+form li+li {
+    margin-top: 1em;
+}
