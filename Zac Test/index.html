@@ -12,11 +12,11 @@
         <h1 class="howToNav">Test Enviroment</h1>
         <!-- Signup Form -->
         <form id="signupForm">
-            <input class="srtname" name="name" type="text" placeholder="First and last name" autocomplete="off" required>
+            <input class="srtname" name="name" type="text" placeholder="First and last name" autocomplete="off">
             <br>
-            <input class="srtsize" name="size" type="text" placeholder="t-shirt size" autocomplete="off" required>
+            <input class="srtsize" name="size" type="text" placeholder="t-shirt size" autocomplete="off" >
             <br>
-            <input class="srtnmbr" name="number" type="number" min="1" max="99" placeholder="Number for t-shirt" autocomplete="off" required>
+            <input class="srtnmbr" name="number" type="number" min="1" max="99" placeholder="Number for t-shirt" autocomplete="off">
             <h3 class="subHeader">
                 What date(s) can you make? (You can vote all 3 or none if you want)
             </h3>
@@ -30,7 +30,7 @@
             <label for="date3">October 24th</label>
             <br>
             <br>
-            <button type="submit">Submit</button>
+            <button onclick="processSignupForm()" type="submit">Submit</button>
         </form>
 
         <ul id="signup-list"></ul>
@@ -61,7 +61,7 @@
     <form onsubmit="submitForm(event)">
         <input name="searchTerm"/>
         <button>Submit</button>
-      </form>
+    </form>
             
 </body>
 </html>

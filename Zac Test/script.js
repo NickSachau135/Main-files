@@ -52,13 +52,29 @@ function processSignupForm() {
     }
   });
   // Now we'll let the user know what they selected when they submitted the form
-  window.alert(`
-  Name: ${signupData.name.value}\n
-  Shirt Size: ${signupData.size.value}\n
-  Shirt Number: ${signupData.number.value}\n
-  Available Dates: ${availableDates}\n
-  Unavailable Dates: ${unavailableDates}
-  `);
+  Object.values(signupData).forEach((property) =>{
+    if (property.value === false) {
+      window.alert(`
+      You forgot to fill out ${property.field}
+      `);
+    }
+    if (property.value === true) {
+      window.alert(`
+        Name: ${signupData.name.value}\n
+        Shirt Size: ${signupData.size.value}\n
+        Shirt Number: ${signupData.number.value}\n
+        Available Dates: ${availableDates}\n
+        Unavailable Dates: ${unavailableDates}
+      `);
+    }
+  });
+  // window.alert(`
+  // Name: ${signupData.name.value}\n
+  // Shirt Size: ${signupData.size.value}\n
+  // Shirt Number: ${signupData.number.value}\n
+  // Available Dates: ${availableDates}\n
+  // Unavailable Dates: ${unavailableDates}
+  // `);
 }
 
 const playerlist = document.querySelector('#signup-list');
