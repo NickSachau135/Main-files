@@ -1,0 +1,19 @@
+.container {
+    width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.minutes {
+    transform: rotate(120deg) translate(7px, 190px);
+}
+
+.hours {
+    transform: rotate(120deg) translate(-255px, -30px);
+}
