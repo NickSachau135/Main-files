@@ -1,6 +1,11 @@
 const cafelist = document.querySelector('#cafe-list');
 const form = document.querySelector('#add-cafe-form');
 
+const firebase = require("firebase");
+require("firebase/firestore");
+
+
+
 //create element and render cafe
 function renderCafe(doc){
     let li = document.createElement('li');
