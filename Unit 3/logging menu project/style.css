@@ -240,8 +240,11 @@ body {
 }
 
 .soups article {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+}
 
+.soups article p {
+    margin-top: 1rem;
 }
 
 /* Specific Charcuterie Styles */
@@ -253,6 +256,42 @@ body {
     border-bottom: var(--border);
 }
 
+.charcuterie header {
+    display: flex;
+}
+
+.charcuterie .heading {
+    font-size: 2rem;
+}
+
+.charcuterie header p {
+    margin-left: 1rem;
+}
+
+.charcuterie article {
+    margin-top: 1rem;
+}
+
+.charcuterie article header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.charcuterie article header::after {
+    content: "";
+    border-bottom: 2px dotted var(--color-text);
+    width: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+}
+
+.charcuterie .price {
+    background-color: var(--color-base);
+    z-index: 1;
+    padding: 0.5rem
+}
+
 /* Specific Sides Styles */
 
 .sides {
@@ -261,6 +300,21 @@ body {
     padding: 1rem;
     border-left: var(--border);
     border-bottom: var(--border);
+}
+
+.sides .heading {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+
+.sides ul {
+    columns: 2;
+    margin-top: 1rem;
+}
+
+.sides .title::after {
+    content: " - ";
 }
 
 /* Specific Footer Styles - */
