@@ -51,7 +51,7 @@
 // let language = prompt(`What coding language is better: C++ or Python?`);
 
 let a = document.getElementById('question_1').value;
-let x = document.write(a);
+let x = document.write('Test');
 let y = document.getElementById.innerHTML= x;
 
 
