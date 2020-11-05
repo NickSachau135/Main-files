@@ -136,7 +136,7 @@
 // for(let i = 0; i < 5; i++ ) {
 //     let x = Math.floor(Math.random() * 10);
 //     console.log(x);
-//     const count = x.push(', ');
+//     const count = x.push(' ,');
 //     console.log(count);
 // }
 
@@ -170,7 +170,82 @@
 // console.log(`Average: ${average}`);
 // console.log(`Grade: ${grade}`);
 
-// for (let i = 0; i < 100; i++) {
-//     if(i % 2 == 1) continue;
+// main: for (let i = 0; i < 100; i++) {
+//     if(i % 2 == 1) continue main;
 //     console.log(i); 
 // }
+
+// let i, j;
+
+// loopOuter:
+// for(i = 0; i < 3; i ++) {
+//     loopInner:
+//     for(j = 0; j < 3; j++) {
+//         if(i == j) {
+//             continue loopOuter;
+//         }else {
+//             console.log(`i = ${i}, j = ${j}, so they are not equal.`);
+//         }
+//     }
+// }
+
+
+let num1 = 0,
+    num2 = 0,
+    num3 = 0,
+    num4 = 0,
+    num5 = 0,
+    num6 = 0;
+
+num1 = Math.ceil(Math.random() * 10);
+num2 = Math.ceil(Math.random() * 10);
+
+while(true) {
+    if(num1 == num2) {
+        num2 = Math.ceil(Math.random() * 10);
+    }else {
+        break;
+    }
+}
+
+num3 = Math.ceil(Math.random() * 10);
+
+while(true) {
+    if(num1 == num3 || num2 == num3) {
+        num3 = Math.ceil(Math.random() * 10);
+    }else {
+        break;
+    }
+}
+
+num4 = Math.ceil(Math.random() * 10);
+
+while(true) {
+    if(num1 == num4 || num2 == num4 || num3 == num4) {
+        num4 = Math.ceil(Math.random() * 10);
+    }else {
+        break;
+    }
+}
+
+num5 = Math.ceil(Math.random() * 10);
+
+while(true) {
+    if(num1 == num5 || num2 == num5 || num3 == num5 || num4 == num5) {
+        num5 = Math.ceil(Math.random() * 10);
+    }else {
+        break;
+    }
+}
+
+num6 = Math.ceil(Math.random() * 10);
+
+while(true) {
+    if(num1 == num6 || num2 == num6 || num3 == num6 || num4 == num6 || num5 == num6) {
+        num6 = Math.ceil(Math.random() * 10);
+    }else {
+        break;
+    }
+}
+
+console.log(`${num1}, ${num2}, ${num3}, ${num4}, ${num5}, ${num6}.`);
