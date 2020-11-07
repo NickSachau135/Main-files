@@ -1,0 +1,15 @@
+:root {
+    --base-color: hsl(0, 0%, 37%);
+}
+
+html {
+    background-color: var(--base-color);
+}
+
+h1{
+    text-align: center;
+}
+
+h1 span {
+    color: yellow;
+}
