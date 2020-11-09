@@ -22,3 +22,41 @@ body {
 .Signup_Form_box {
     text-align: center;
 }
+
+
+
+
+/* "clog": {
+    "prefix": "clog",
+    "body": [
+      "console.log(`$1`)",
+      
+    ],
+    "description": "console.log(``)"
+},
+
+"function": {
+    "prefix": "!f()",
+    "body": [
+      "function (){",
+      "",
+      "}"
+    ],
+    "description": "function"
+  },
+
+"or": {
+    "prefix": "or",
+    "body": [
+        "|| "
+    ],
+    "description": " || "
+},
+
+"and": {
+    "prefix": "and",
+    "body": [
+        "&& "
+    ],
+    "description": " && "
+}, */
