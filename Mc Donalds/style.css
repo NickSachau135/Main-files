@@ -1,9 +1,16 @@
 :root {
     --base-color: hsl(0, 0%, 37%);
+    --nav-text: rgb(136, 136, 136);
+    --nav-background: linear-gradient(black, yellow, black);
+    --nav-text-hover: rgb(238, 8, 8);
 }
 
 html {
     background-color: var(--base-color);
+}
+
+body {
+
 }
 
 h1{
@@ -12,4 +19,60 @@ h1{
 
 h1 span {
     color: yellow;
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    background-color: var(--nav-background);
+}
+
+nav ul{ 
+    list-style-type: none;
+    color: var(--nav-text);
+    background: none;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    flex-direction: row;
+    margin: auto;
+}
+
+nav li a {
+    color: var(--nav-text);
+}
+
+nav li a:hover {
+    color: var(--nav-text-hover);
+}
+
+#featured {
+    width: 75%;
+    color: wheat;
+    display: flex-box;
+    margin: 0 auto;
+}
+
+#featured h2 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#featued p {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#featured img {
+    width: 25%;
+    transition: all .7s cubic-bezier(0.6, 0.11, 0.1, 0.44);
+    margin: 0 auto;
+}
+
+#featured img:hover {
+    width: 30%;
 }
