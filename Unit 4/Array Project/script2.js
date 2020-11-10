@@ -2,39 +2,54 @@ let arr = "()(((()())))()))()(())(()()()))))())(()((((()()()(()))())()((((((()))
 arr.split("");
 
 let lgth = arr.length;
-let output = "";
 let end = "";
-let east = 0;
-let west = 0;
+let pos = 0;
 let endNum = 0;
 
 loop:
 while(true) {
     for(let i = 0; i <= lgth; i++) {
-        if(arr[0] == "(") {
+        if(east == 0 && west == 0) {
             if(arr[i] == "(") {
-                output += "West, "
-                west ++;
-            }
-            if(arr[i] == ")") {
-                output += "East, "
+                // not adding to west
+                console.log(`West`);
+            }else if(arr[i] == ")") {
+                console.log(`East`);
                 east ++;
             }
         }
-
-        if(arr[i] == "(")
-    }
+        // if(east > west) {
+        //     if(arr[i] == "(") {
+        //         west ++;
+        //     }
+        //     if(arr[i] == ")") {
+        //         east ++;
+        //     }
+        //     console.log(`works`);
+        // }
+        // if (west < east) {
+        //     console.log(`doesnt work`);
+        // }
 
     console.log(`He went East ${east} times.`);
     console.log(`He went West ${west} times.`);
 
-    if(west < east) {
-        endNum = east - west;
-        console.log(`He went East ${endNum} from the starting point`)
-    }
-    if(west > east) {
-        endNum = west - east;
-        console.log(`He went west ${endNum} from the starting point`)
-    }
     break loop; 
+    }
 }
+
+
+
+
+// for(let i = 0; i < input.length; i++) {
+//     if(west < east) {
+//         if(input[i] == "("){
+//             west++;
+//         }else if( input[i] == ")") {
+//             east++;
+//         }
+//     }else if (east < west) {
+//         if (input[i] == ")") {
+//             east++;
+//         }
+//     }
