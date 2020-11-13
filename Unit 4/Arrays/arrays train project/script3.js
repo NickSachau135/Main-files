@@ -4,20 +4,21 @@ arr = arr.split("");
 let lgth = arr.length;
 let end = "";
 let pos = 0;
-let test = 0;
 
 loop:
 while(true) {
     for(let i = 0; i <= lgth; i++) {
-        if(arr[i] == "(") {
-            // pos ++;
-            if(arr[i + 1] == "(") {
-                test ++;
-                pos ++;
-            }
+        if(arr[i] == "(" && arr[i + 1] == "(") {
+            pos ++;
+            i ++;
         }
-
-        if(arr[i] == ")") {
+        else if(arr[i] == "(") {
+            pos ++;
+        }
+        else if(arr[i] == ")" && arr[i + 1] == ")") {
+            pos --;
+            i ++;
+        }else if(arr[i] == ")") {
             pos --;
         }
     }
@@ -29,6 +30,5 @@ while(true) {
         pos = Math.abs(pos)
         console.log(`He went East ${pos} stations`);
     }
-    console.log(test)
     break loop;
 }
