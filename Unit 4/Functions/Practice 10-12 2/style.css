@@ -1,0 +1,39 @@
+button {
+    border-radius: 100px;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: cursive;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+header {
+    text-align: center;
+}
+
+div {
+    display: flex;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+button:focus {
+    outline: none;
+    background-color: lightcoral;
+}
+
+button:hover {
+    background-color: lightblue;
+}
+
+button:active {
+    background-color: red;
+}
