@@ -134,7 +134,7 @@
 
 
 // for(let i = 0; i < 5; i++ ) {
-//     let x = Math.floor(Math.random() * 10);
+    // let x = Math.floor(Math.random() * 10);
 //     console.log(x);
 //     const count = x.push(' ,');
 //     console.log(count);
