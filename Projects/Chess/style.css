@@ -1,8 +1,8 @@
-*, *::after, *::before {
+/* *, *::after, *::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 body {
     min-height: 100vh;
@@ -32,12 +32,12 @@ div.logo {
     background-color: #f1f1f1;
     text-align: center;
     border: 1px solid #d3d3d3;
-}
+  }
   
-#mydivheader {
+  #mydivheader {
     padding: 10px;
-    cursor: cell;
+    cursor: move;
     z-index: 10;
     background-color: #2196F3;
     color: #fff;
-}
+  }
