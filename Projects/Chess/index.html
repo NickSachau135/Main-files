@@ -1,175 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Nick Sachau">
-    <meta name="description" content="">
-    <meta property="og:image" content="">
-    <meta property="og:description" content="">
-    <meta property="og:title" content="">
-    <link rel="icon" href="images/logo.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Chess</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Nick Sachau">
+  <meta name="description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="">
+  <meta property="og:title" content="">
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Chess</title>
 </head>
 <body>
 
-    <div class="logo">
-        <img src="images/logo.png" alt="Chess Logo" width="150px">
+  <!-- <div id="mydiv">
+    <div id="mydivheader">Click here to move</div>
+    <p>Move</p>
+    <p>this</p>
+    <p>DIV</p>
+  </div> -->
+
+  <div class="logo">
+    <img src="images/logo.png" alt="Chess Logo" width="150px">
+  </div>
+
+  <Header>
+    <button id="buttonSingle" onclick="singleplayer()">Single Player</button>
+    <h1 id="title">Chess</h1>
+    <button id="buttonDouble" onclick="multiplayer()">Multiplayer</button>
+  </Header>
+
+  <div id="board" class="board">
+    <div class="a">
+        <div class="square a1 black"><img src="images/W R.png" alt=""></div>
+        <div class="square a2 white"><img src="images/W P.png" alt=""></div>
+        <div class="square a3 black"></div>
+        <div class="square a4 white"></div>
+        <div class="square a5 black"></div>
+        <div class="square a6 white"></div>
+        <div class="square a7 black"><img src="images/B P.png" alt=""></div>
+        <div class="square a8 white"><img src="images/B R.png" alt=""></div>
     </div>
 
-    <Header>
-        <button onclick="singleplayer()">Single Player</button>
-        <h1>Chess</h1>
-        <button onclick="multiplayer()">Multiplayer</button>
-    </Header>
-
-    <div id="mydiv">
-        <div id="mydivheader"><img src="images/logo.png" alt="" width="75px"></div>
+    <div class="b">
+        <div class="square b1 white"><img src="images/W N.png" alt=""></div>
+        <div class="square b2 black"><img src="images/W P.png" alt=""></div>
+        <div class="square b3 white"></div>
+        <div class="square b4 black"></div>
+        <div class="square b5 white"></div>
+        <div class="square b6 black"></div>
+        <div class="square b7 white"><img src="images/B P.png" alt=""></div>
+        <div class="square b8 black"><img src="images/B N.png" alt=""></div>
     </div>
 
-    <div id="mydiv">
-        <div id="mydivheader">Click here to move</div>
-        <p>Move</p>
-        <p>this</p>
-        <p>DIV</p>
+    <div class="c">
+        <div class="square c1 black"><img src="images/W B.png" alt=""></div>
+        <div class="square c2 white"><img src="images/W P.png" alt=""></div>
+        <div class="square c3 black"></div>
+        <div class="square c4 white"></div>
+        <div class="square c5 black"></div>
+        <div class="square c6 white"></div>
+        <div class="square c7 black"><img src="images/B P.png" alt=""></div>
+        <div class="square c8 white"><img src="images/B B.png" alt=""></div>
     </div>
 
-    <div class="board">
-        <div class="a">
-            <div class="square a1 black"></div>
-            <div class="square a2 white"></div>
-            <div class="square a3 black"></div>
-            <div class="square a4 white"></div>
-            <div class="square a5 black"></div>
-            <div class="square a6 white"></div>
-            <div class="square a7 black"></div>
-            <div class="square a8 white"></div>
-        </div>
-
-        <div class="b">
-            <div class="square b1 white"></div>
-            <div class="square b2 black"></div>
-            <div class="square b3 white"></div>
-            <div class="square b4 black"></div>
-            <div class="square b5 white"></div>
-            <div class="square b6 black"></div>
-            <div class="square b7 white"></div>
-            <div class="square b8 black"></div>
-        </div>
-
-        <div class="c">
-            <div class="square c1 black"></div>
-            <div class="square c2 white"></div>
-            <div class="square c3 black"></div>
-            <div class="square c4 white"></div>
-            <div class="square c5 black"></div>
-            <div class="square c6 white"></div>
-            <div class="square c7 black"></div>
-            <div class="square c8 white"></div>
-        </div>
-
-        <div class="d">
-            <div class="square d1 white"></div>
-            <div class="square d2 black"></div>
-            <div class="square d3 white"></div>
-            <div class="square d4 black"></div>
-            <div class="square d5 white"></div>
-            <div class="square d6 black"></div>
-            <div class="square d7 white"></div>
-            <div class="square d8 black"></div>
-        </div>
-
-        <div class="e">
-            <div class="square e1 black"></div>
-            <div class="square e2 white"></div>
-            <div class="square e3 black"></div>
-            <div class="square e4 white"></div>
-            <div class="square e5 black"></div>
-            <div class="square e6 white"></div>
-            <div class="square e7 black"></div>
-            <div class="square e8 white"></div>
-        </div>
-
-        <div class="f">
-            <div class="square f1 white"></div>
-            <div class="square f2 black"></div>
-            <div class="square f3 white"></div>
-            <div class="square f4 black"></div>
-            <div class="square f5 white"></div>
-            <div class="square f6 black"></div>
-            <div class="square f7 white"></div>
-            <div class="square f8 black"></div>
-        </div>
-
-        <div class="g">
-            <div class="square g1 black"></div>
-            <div class="square g2 white"></div>
-            <div class="square g3 black"></div>
-            <div class="square g4 white"></div>
-            <div class="square g5 black"></div>
-            <div class="square g6 white"></div>
-            <div class="square g7 black"></div>
-            <div class="square g8 white"></div>
-        </div>
-
-        <div class="h">
-            <div class="square h1 white"></div>
-            <div class="square h2 black"></div>
-            <div class="square h3 white"></div>
-            <div class="square h4 black"></div>
-            <div class="square h5 white"></div>
-            <div class="square h6 black"></div>
-            <div class="square h7 white"></div>
-            <div class="square h8 black"></div>
-        </div>
+    <div class="d">
+        <div class="square d1 white"><img src="images/W Q.png" alt=""></div>
+        <div class="square d2 black"><img src="images/W P.png" alt=""></div>
+        <div class="square d3 white"></div>
+        <div class="square d4 black"></div>
+        <div class="square d5 white"></div>
+        <div class="square d6 black"></div>
+        <div class="square d7 white"><img src="images/B P.png" alt=""></div>
+        <div class="square d8 black"><img src="images/B Q.png" alt=""></div>
     </div>
 
-    <script src="script.js"></script>
-    <script>
-        //Make the DIV element draggagle:
-        dragElement(document.getElementById("mydiv"));
+    <div class="e">
+        <div class="square e1 black"><img src="images/W K.png" alt=""></div>
+        <div class="square e2 white"><img src="images/W P.png" alt=""></div>
+        <div class="square e3 black"></div>
+        <div class="square e4 white"></div>
+        <div class="square e5 black"></div>
+        <div class="square e6 white"></div>
+        <div class="square e7 black"><img src="images/B P.png" alt=""></div>
+        <div class="square e8 white"><img src="images/B K.png" alt=""></div>
+    </div>
 
-        function dragElement(elmnt) {
-            var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-            if (document.getElementById(elmnt.id + "header")) {
-                /* if present, the header is where you move the DIV from:*/
-                document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-            } else {
-                /* otherwise, move the DIV from anywhere inside the DIV:*/
-                elmnt.onmousedown = dragMouseDown;
-            }
+    <div class="f">
+        <div class="square f1 white"><img src="images/W B.png" alt=""></div>
+        <div class="square f2 black"><img src="images/W P.png" alt=""></div>
+        <div class="square f3 white"></div>
+        <div class="square f4 black"></div>
+        <div class="square f5 white"></div>
+        <div class="square f6 black"></div>
+        <div class="square f7 white"><img src="images/B P.png" alt=""></div>
+        <div class="square f8 black"><img src="images/B B.png" alt=""></div>
+    </div>
 
-            function dragMouseDown(e) {
-                e = e || window.event;
-                e.preventDefault();
-                // get the mouse cursor position at startup:
-                pos3 = e.clientX;
-                pos4 = e.clientY;
-                document.onmouseup = closeDragElement;
-                // call a function whenever the cursor moves:
-                document.onmousemove = elementDrag;
-            }
+    <div class="g">
+        <div class="square g1 black"><img src="images/W N.png" alt=""></div>
+        <div class="square g2 white"><img src="images/W P.png" alt=""></div>
+        <div class="square g3 black"></div>
+        <div class="square g4 white"></div>
+        <div class="square g5 black"></div>
+        <div class="square g6 white"></div>
+        <div class="square g7 black"><img src="images/B P.png" alt=""></div>
+        <div class="square g8 white"><img src="images/B N.png" alt=""></div>
+    </div><img src="images/" alt="">
 
-            function elementDrag(e) {
-                e = e || window.event;
-                e.preventDefault();
-                // calculate the new cursor position:
-                pos1 = pos3 - e.clientX;
-                pos2 = pos4 - e.clientY;
-                pos3 = e.clientX;
-                pos4 = e.clientY;
-                // set the element's new position:
-                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-            }
+    <div class="h">
+        <div class="square h1 white"><img src="images/W R.png" alt=""></div>
+        <div class="square h2 black"><img src="images/W P.png" alt=""></div>
+        <div class="square h3 white"></div>
+        <div class="square h4 black"></div>
+        <div class="square h5 white"></div>
+        <div class="square h6 black"></div>
+        <div class="square h7 white"><img src="images/B P.png" alt=""></div>
+        <div class="square h8 black"><img src="images/B R.png" alt=""></div>
+    </div>
+  </div>
 
-            function closeDragElement() {
-                /* stop moving when mouse button is released:*/
-                document.onmouseup = null;
-                document.onmousemove = null;
-            }
-        }
-    </script>
+<script src="script.js"></script>
+
 </body>
 </html>
