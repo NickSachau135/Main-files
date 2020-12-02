@@ -6,6 +6,7 @@ let turn = 1;
 let answer = [];
 let guessCount = 0;
 let guessArray = [];
+let colorSame = 0;
 
 document.getElementById("submitButton").onclick = function(){
     submitGuess();
@@ -127,6 +128,8 @@ function submitGuess() {
     if(turn > 9) {
         youLose();
     }
+
+    guessArray = [];
 }
 
 function clearGuess() {
@@ -140,21 +143,35 @@ function clearGuess() {
         }
     }
     guessCount = 0;
+
+    guessArray = [];
 }
 
 let createAnswer = function() {
     answer = [];
-    for(let marble = 1; marble <= 4;) {
-        let newColor = colors[Math.floor(Math.random() * 7)];
-        if(answer.includes(newColor)) {
-            continue;
-        } else {
+    let x = Math.floor(Math.random() * 10);
+    if(x % 3 == 0) {
+        for(let marble = 1; marble <= 4;) {
+            let newColor = colors[Math.floor(Math.random() * 7)];
             answer[marble] = newColor;
             marble++;
-        }
 
+        }
+        console.log(answer);
+    }else {
+        for(let marble = 1; marble <= 4;) {
+            let newColor = colors[Math.floor(Math.random() * 7)];
+            if(answer.includes(newColor)) {
+                continue;
+            } else {
+                answer[marble] = newColor;
+                marble++;
+            }
+
+        }
+        console.log(answer);
     }
-    console.log(answer);
+    
 }
 
 createAnswer();
@@ -164,7 +181,10 @@ let chooseColor = function(color) {
     for(let item = 0; item < elemList.length; item++) {
         let elemListItem = elemList[item];
         if(elemListItem.classList.contains(color)) {
-            return; //ends the function
+            colorSame++
+            console.log(colorSame);
+        }else if(colorSame < 3) {
+            return
         }
     }
 
