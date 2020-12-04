@@ -26,3 +26,8 @@ function addCard() {
         document.getElementById("error2").style.display = "inline-block";
     }
 }
+
+console.log('%c Hello,\n This is my website!\n Here you can play the game called master mind.\n I am a begining WebDeveloper.\n I hope you like what I make and possibly hire me.', 'color: orange; font-weight: bold;');
+console.log('%c Bellow you can see what all the possible cards are\n and when you submit a card it will update here\n "playerCards" are yours and "cards" are all the\n cards possible ↓', 'color: #16D831; font-weight: bold;');
+console.log({ cards, playerCards });
+console.table([cards, playerCards]);
