@@ -1,11 +1,10 @@
 "use strict";
 
 let cards = ['SK', 'HK', 'CK', 'DK', 'SQ', 'HQ', 'CQ', 'DQ', 'SJ', 'HJ', 'CJ', 'DJ', 'S10', 'H10', 'C10', 'D10', 'S9', 'H9', 'C9', 'D9', 'S8', 'H8', 'C8', 'D8', 'S7', 'H7', 'C7', 'D7', 'S6', 'H6', 'C6', 'D6', 'S5', 'H5', 'C5', 'D5', 'S4', 'H4', 'C4', 'D4', 'S3', 'H3', 'C3', 'D3', 'S2', 'H2', 'C2', 'D2', 'SA', 'HA', 'CA', 'DA'];
-
-let playerCards = []
+let playerCards = [];
 
 document.getElementById("generate").onclick = function() {
-    predictDeck();
+    // predictDeck();
 }
 
 function predictDeck() {
@@ -15,8 +14,15 @@ function predictDeck() {
 }
 
 function addCard() {
-    boxvalue = document.getElementById('box').value;
-    playerCards.push(boxvalue);  
-    console.log(playerCards);
-    return false;
+    let input = document.getElementById("playerCards").value;
+    console.log(input);
+    if(input == "SK" || input == "sk") {
+        playerCards.push(input);
+        document.getElementById("yourCards").innerHTML = playerCards;
+        document.getElementById("playerCards").value = "";
+    }else if(input == ""){
+        document.getElementById("error").style.display = "inline-block";
+    }else {
+        document.getElementById("error2").style.display = "inline-block";
+    }
 }
