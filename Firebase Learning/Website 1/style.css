@@ -1,0 +1,42 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #D5410C;
+    --dTC: #111111;  /*dTC stands for default text color*/
+    --button: #2AE817;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--bg);
+    color: var(--dTC);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 35px;
+    min-width: 100%;
+    padding-bottom: 12px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.signup {
+    display: flex;
+}
+
+.signup form {
+    text-align: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 100px;
+}

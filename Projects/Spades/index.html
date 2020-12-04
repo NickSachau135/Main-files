@@ -9,19 +9,43 @@
     <meta property="og:title" content="">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Spades</title>
 </head>
 <body>
 
-    <form onsubmit="return addCard()">
+    <form autocomplete="off" onsubmit="addCard();return false;">
         <p>Please insert one card at a time</p>
         <input type="text" id="playerCards">
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit Card">
     </form>
+    
+    <div id="error" class="talk-bubble tri-right border btm-right-in">
+        <div class="talktext">
+            <p>This needs to have a value</p>
+        </div>
+    </div>
 
-    <div id="generate">Generate Decks!</div>
+    <div id="error2" class="talk-bubble tri-right border btm-right-in">
+        <div class="talktext">
+            <p>Refer to the Input Help for inputs to use</p>
+        </div>
+    </div>
+
+    <div id="generate">Generate Hands!</div>
+
+    
+
+    <p class="x">Your cards are: <span id="yourCards"></span></p>
+
+    <p id="possibleDeck1"></p>
+
+    <p id="possibleDeck2"></p>
+
+    <p id="possibleDeck3"></p>
 
     <script src="script.js"></script>
 
+    
 </body>
 </html>
