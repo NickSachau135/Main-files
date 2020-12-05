@@ -14,38 +14,18 @@
 </head>
 <body>
 
-    <form autocomplete="off" onsubmit="addCard();return false;">
-        <p>Please insert one card at a time</p>
-        <input type="text" id="playerCards">
-        <input type="submit" value="Submit Card">
-    </form>
-    
-    <div id="error" class="talk-bubble tri-right border btm-right-in">
-        <div class="talktext">
-            <p>This needs to have a value</p>
-        </div>
+    <header class="title">
+        <h1><a href="index.html">Spades</a></h1>
+    </header>
+
+    <div class="playerBox">
+        <a href="2 player"><div class="center" id="twoPlayer">2 Player</div></a>
+        <a href="3 player"><div class="center" id="threePlayer">3 Player</div></a>
+        <a href="4 player.html"><div class="center" id="fourPlayer">4 Player</div></a>
     </div>
-
-    <div id="error2" class="talk-bubble tri-right border btm-right-in">
-        <div class="talktext">
-            <p>Refer to the Input Help for inputs to use</p>
-        </div>
-    </div>
-
-    <div id="generate">Generate Hands!</div>
-
+        
     
-
-    <p class="x">Your cards are: <span id="yourCards"></span></p>
-
-    <p id="possibleDeck1"></p>
-
-    <p id="possibleDeck2"></p>
-
-    <p id="possibleDeck3"></p>
-
     <script src="script.js"></script>
 
-    
 </body>
 </html>
