@@ -17,7 +17,7 @@ let inputHelp = () => {
         document.getElementById("inputHelp").style.transform = "translateX(500px)";
     }else{
         table = true;
-        document.getElementById("inputHelp").style.transform = "translateX(0)";
+        document.getElementById("inputHelp").style.transform = "translateX(-30px)";
     }
 }
 
@@ -30,7 +30,6 @@ function predictDeck() {
 }
 
 function addCard() {
-    document.getElementById("a").style.display = "block";
     document.getElementById("buttons").style.marginTop = "200px";
     if(playerCards.length == 13) {
         document.getElementById("playerCards").value = "";
@@ -41,7 +40,6 @@ function addCard() {
     let input = document.getElementById("playerCards").value;
     document.getElementById("error").style.display = "none";
     document.getElementById("error2").style.display = "none";
-    document.getElementById("dropdown").style.display = "none";
 
     for(let i = 0; i < playerCards.length; i++){
         if(input.toUpperCase() == playerCards[i]) {
@@ -61,16 +59,19 @@ function addCard() {
                 addText.id = playerCards[playerCards.length - 1];
                 document.getElementById(playerCards[playerCards.length - 1]).setAttribute("onclick", `return removeCard("${playerCards[playerCards.length - 1]}")`); 
                 document.getElementById("yourCards").textContent = playerCards.join(", ");
+                document.getElementById("totalCards").textContent = playerCards.length;
+                document.getElementById("a").style.display = "block";
                 document.getElementById("dropdown").style.display = "inline-block";
+                document.getElementById("inputHelp").style.marginTop = "0";
                 break;
             }else if(input == ""){
                 document.getElementById("error").style.display = "inline-block";
-                document.getElementById("buttons").style.marginTop = "24px";
-                document.getElementById("dropdown").style.display = "inline-block";
+                document.getElementById("buttons").style.marginTop = "58px";
+                // document.getElementById("dropdown").style.display = "inline-block";
             }else if(i == 51) {
                 document.getElementById("error2").style.display = "inline-block";
                 document.getElementById("buttons").style.marginTop = "0";
-                document.getElementById("dropdown").style.display = "inline-block";
+                // document.getElementById("dropdown").style.display = "inline-block";
             }
         }
     }
