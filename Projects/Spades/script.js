@@ -113,6 +113,7 @@ function removeCard(card) {
             console.log(playerCards);
             document.getElementById("yourCards").textContent = playerCards.join(", ");
             document.getElementById(card).remove();
+            document.getElementById("totalCards").textContent = playerCards.length;
         }
     }
     if(playerCards.length == 0) {
