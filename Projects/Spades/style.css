@@ -13,6 +13,7 @@
     --tableBoxBorder: #F10A0A;
     --tableBorder: #F17D0A;
 }
+
 html,body {
     max-width: 100%;
     overflow-x: hidden;
