@@ -1,0 +1,66 @@
+body {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: flex;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+.flex-start li {
+    background-color: red;
+    color: cornsilk;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.flex-end li {
+    background: orange;
+}
+
+.center {
+    align-items: center;
+}
+
+.center li {
+    background: yellow;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch li {
+    background: green;
+    color: cornsilk;
+}
+
+.baseline {
+    align-items: baseline;
+}
+
+.baseline li {
+    background: blue;
+    color: cornsilk;
+}
+
+.flex-item {
+    padding: 5px;
+    margin: 5px;
+    width: 50px;
+
+    line-height: 50px;
+    font-size: 2rem;
+    font-weight: 200;
+    text-align: center;
+}
