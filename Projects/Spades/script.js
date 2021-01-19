@@ -1,5 +1,6 @@
 "use strict";
 
+
 let dropDown = document.querySelector("#myDropdown");
 let cardExisits = false;
 const cards = ['SK', 'HK', 'CK', 'DK', 'SQ', 'HQ', 'CQ', 'DQ', 'SJ', 'HJ', 'CJ', 'DJ', 'S10', 'H10', 'C10', 'D10', 'S9', 'H9', 'C9', 'D9', 'S8', 'H8', 'C8', 'D8', 'S7', 'H7', 'C7', 'D7', 'S6', 'H6', 'C6', 'D6', 'S5', 'H5', 'C5', 'D5', 'S4', 'H4', 'C4', 'D4', 'S3', 'H3', 'C3', 'D3', 'S2', 'H2', 'C2', 'D2', 'SA', 'HA', 'CA', 'DA'];
@@ -26,7 +27,26 @@ document.getElementById("input").onclick = function() {
 }
 
 function predictDeck() {
+    checkNil();
     return false;
+}
+
+let messages = ['Checking', 'Checking.', 'Checking..', 'Checking...', 'Checking....', 'Checking.....'];
+let index = -1;
+
+function checkNil() {
+
+    setInterval(function() {
+        if(index == 5) {
+            index = -1;
+        }
+        index++;
+        let message = messages[index];
+        document.title = message;
+        document.getElementById('checking').textContent = message;
+    }, 500);
+
+    document.getElementById('checking').textContent = "Checking";
 }
 
 function addCard() {
@@ -79,10 +99,6 @@ function addCard() {
     
 }
 
-console.log('%c Hello,\n This is my website!\n I am a begining WebDeveloper.\n I hope you like what I make and possibly hire me.', 'color: orange; font-weight: bold;');
-console.log('%c Bellow you can see what all the possible cards are\n and when you submit a card it will update here\n "playerCards" are yours and "cards" are all the\n cards possible ↓', 'color: #16D831; font-weight: bold;');
-console.log({ cards, playerCards });
-console.table([cards, playerCards]);
 
 
 /* When the user clicks on the button, 
