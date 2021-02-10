@@ -58,4 +58,14 @@ body section button:active {
   background-color: darkorchid;
   border: 2px solid red;
 }
+
+body section button#testing {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+body section #submit {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
 /*# sourceMappingURL=style.css.map */

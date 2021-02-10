@@ -15,6 +15,7 @@ body {
     align-items: center;
     gap: 5px;
     font-family: $font-stack;
+
     section {
         width: 300px;
         height: 400px;
@@ -31,6 +32,7 @@ body {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+
         button {
             background-color: $main-color;
             border: $border;
@@ -38,10 +40,19 @@ body {
             height: 25px;
             margin: 5px;
             outline: none;
+
             &:active {
                 background-color: darkorchid;
                 border: 2px solid red;
             }
+
+            &#testing {
+                align-self: flex-end;
+            }
+        }
+
+        #submit {
+            align-self: flex-end;
         }
     }
 }
