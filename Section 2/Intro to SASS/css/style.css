@@ -5,6 +5,13 @@
           box-sizing: border-box;
 }
 
+ul li {
+  text-decoration: none;
+  list-style-type: none;
+  background-color: green;
+  color: honeydew;
+}
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;

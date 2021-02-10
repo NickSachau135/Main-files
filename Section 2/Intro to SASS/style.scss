@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+@import 'partials/_list.scss';
+
 $main-color: lightblue;
 $font-stack: Helvetica, sans-serif;
 $border: 3px solid #333;
